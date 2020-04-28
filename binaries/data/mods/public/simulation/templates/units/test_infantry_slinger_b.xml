@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_infantry_ranged_slinger">
+<Entity parent="template_unit_infantry_ranged">
+  <Armour>
+    <Hack>1</Hack>
+    <Pierce>1</Pierce>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Hack>0</Hack>
+        <Pierce>0.9</Pierce>
+        <Crush>0.1</Crush>
+      </Damage>
+      <MaxRange>48.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>50</PrepareTime>
+      <RepeatTime>100</RepeatTime>
+      <Projectile>
+        <Speed>62.5</Speed>
+        <Spread>3.5</Spread>
+        <Gravity>29.81</Gravity>
+      </Projectile>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <stone>30</stone>
+      <wood>20</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Slinger</VisibleClasses>
+    <GenericName>Slinger</GenericName>
+  </Identity>
+  <Loot>
+    <stone>5</stone>
+  </Loot>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>project/hitmarker.xml</attack_ranged>
+      <order_walk>project/positive.xml</order_walk>
+      <order_gather>project/negative.xml</order_gather>
+      <order_repair>project/negative.xml</order_repair>
+      <order_build>project/negative.xml</order_build>
+      <order_garrison>project/negative.xml</order_garrison>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <select>project/select.xml</select>
+    </SoundGroups>
+  </Sound>
   <Builder>
     <Entities datatype="tokens">
       structures/test_tower_artillery
@@ -12,14 +62,14 @@
     <Civ>test</Civ>
     <Lang>greek</Lang>
     <SelectionGroupName>units/test_infantry_slinger_b</SelectionGroupName>
-    <GenericName>Athenian Slinger Militia</GenericName>
-    <SpecificName>Psilòs Athēnaîos</SpecificName>
+    <GenericName>Minigun</GenericName>
+    <SpecificName>Rabies</SpecificName>
     <Icon>units/athen_infantry_slinger.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/test_infantry_slinger_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/athenians/infantry_slinger_b.xml</Actor>
+    <Actor>units/athenians/minigun_slinger.xml</Actor>
   </VisualActor>
 </Entity>
