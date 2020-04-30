@@ -70,6 +70,6 @@
     <Entity>units/test_infantry_slinger_a</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/athenians/minigun_slinger.xml</Actor>
+    <Actor>units/athenians/infantry_minigun.xml</Actor>
   </VisualActor>
 </Entity>
