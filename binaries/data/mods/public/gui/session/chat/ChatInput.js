@@ -86,5 +86,6 @@ class ChatInput
 
 		for (let handler of this.chatSubmittedHandlers)
 			handler();
+		this.chatInput.caption = "";
 	}
 }

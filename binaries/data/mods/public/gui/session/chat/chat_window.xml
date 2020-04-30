@@ -68,7 +68,7 @@
 
 		<!-- Cancel Button -->
 		<object name="closeChat" size="16 100%-40 30%+16 100%-12" type="button" style="StoneButton">
-			<translatableAttribute id="caption">Cancel</translatableAttribute>
+			<translatableAttribute id="caption">Close</translatableAttribute>
 		</object>
 
 		<!-- Extended Chat Checkbox -->

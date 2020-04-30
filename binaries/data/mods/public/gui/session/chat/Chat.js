@@ -16,7 +16,6 @@ class Chat
 		this.ChatInput.registerChatSubmitHandler(executeNetworkCommand);
 		this.ChatInput.registerChatSubmitHandler(cheats.executeCheat.bind(cheats));
 		this.ChatInput.registerChatSubmitHandler(this.submitChat.bind(this));
-		this.ChatInput.registerChatSubmittedHandler(this.closePage.bind(this));
 
 		this.ChatAddressees = new ChatAddressees();
 		this.ChatAddressees.registerSelectionChangeHandler(this.ChatInput.onSelectionChange.bind(this.ChatInput));
